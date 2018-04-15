@@ -3,19 +3,33 @@
 Aby to uruchomić lokalnie na postgresie:
 
 1. Stwórz bazę np. springbootdb poleceniem:
+
+~~~ console
 createdb -h localhost -p 5432 -U postgres springbootdb password
+~~~
+
 (będziesz zapytany o hasło użytkownika 'postgres', podaj je)
 
+
 2. Edytuj plik application.properties:
+
+~~~ console
 spring.datasource.url=jdbc:postgresql://localhost:5432/springbootdb
 spring.datasource.username=postgres
 spring.datasource.password=twoje_hasło
 spring.jpa.generate-ddl=true
+~~~
+
 (korzystanie z użytkownika 'postgres' nie jest zalecane, ale jak chcesz szybko to odpalić to możesz to zrobić)
 
+
 3. Skompiluj i odpal:
+
+~~~ console
 ./gradlew stage
 java $JAVA_OPTS -jar build/libs/template-0.0.1-SNAPSHOT.jar
+~~~
+
 
 
 # tiy-java-gradle-template
