@@ -2,6 +2,13 @@
 
 Aby to uruchomić lokalnie na postgresie:
 
+0. Pobierz kod:
+
+~~~ console
+git clone git@github.com:ksob/tiy-java-spring-boot-gradle-heroku-template.git
+cd git@github.com:ksob/tiy-java-spring-boot-gradle-heroku-template.git
+~~~
+
 1. Stwórz bazę np. springbootdb poleceniem:
 
 ~~~ console
