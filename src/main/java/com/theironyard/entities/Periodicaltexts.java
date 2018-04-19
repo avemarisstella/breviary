@@ -3,6 +3,7 @@ package com.theironyard.entities;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 @Entity
 public class Periodicaltexts {
@@ -17,6 +18,7 @@ public class Periodicaltexts {
     String period;
     String week_day;
     int prayer_version;
+    @Lob
     String prayer_text;
 
 
