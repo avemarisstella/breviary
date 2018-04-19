@@ -16,12 +16,14 @@ public class Periodical_texts {
     String prayer;
     String period;
     String week_day;
+    int prayer_version;
     String prayer_text;
 
 
     public Periodical_texts() {}
 
     public Periodical_texts(int page_number, String prayer_type, String prayer,String period, String week_day,
+                            int prayer_version,
                             String prayer_text)
     {
         this.page_number = page_number;
@@ -29,6 +31,7 @@ public class Periodical_texts {
         this.prayer = prayer;
         this.period = period;
         this.week_day = week_day;
+        this.prayer_version = prayer_version;
         this.prayer_text = prayer_text;
 
     }
