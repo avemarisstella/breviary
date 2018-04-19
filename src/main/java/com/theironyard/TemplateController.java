@@ -1,6 +1,8 @@
 package com.theironyard;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class TemplateController {
@@ -29,9 +31,9 @@ public class TemplateController {
         return "home";
     }*/
 
- /*  @RequestMapping(path = "/")
+   @RequestMapping(path = "/")
     public String home(Model model){
-       ArrayList<Periodicaltexts> breviary_elements = new ArrayList<>();
+ //      ArrayList<Periodicaltexts> breviary_elements = new ArrayList<>();
 
 
 
@@ -39,6 +41,6 @@ public class TemplateController {
 
    return "home";
    }
-*/
+
 
 }
