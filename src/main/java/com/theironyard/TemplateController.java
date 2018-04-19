@@ -1,22 +1,17 @@
 package com.theironyard;
 
-import com.theironyard.entities.Widget;
-import com.theironyard.repositories.WidgetRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.ArrayList;
-import java.util.Random;
 
 @Controller
 public class TemplateController {
 
-    @Autowired
-    WidgetRepository widgetRepository;
+//    @Autowired
+  //  WidgetRepository widgetRepository;
 
-    @RequestMapping(path = "/")
+
+
+
+   /* @RequestMapping(path = "/")
     public String home(Model model){
 
         if(widgetRepository.count() == 0) {
@@ -32,5 +27,18 @@ public class TemplateController {
         model.addAttribute("widgets", widgetRepository.findAll());
 
         return "home";
-    }
+    }*/
+
+ /*  @RequestMapping(path = "/")
+    public String home(Model model){
+       ArrayList<Periodical_texts> breviary_elements = new ArrayList<>();
+
+
+
+
+
+   return "home";
+   }
+*/
+
 }
