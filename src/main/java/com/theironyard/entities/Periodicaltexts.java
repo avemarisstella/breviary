@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Periodical_texts {
+public class Periodicaltexts {
 
     @Id
     @GeneratedValue
@@ -20,11 +20,11 @@ public class Periodical_texts {
     String prayer_text;
 
 
-    public Periodical_texts() {}
+    public Periodicaltexts() {}
 
-    public Periodical_texts(int page_number, String prayer_type, String prayer,String period, String week_day,
-                            int prayer_version,
-                            String prayer_text)
+    public Periodicaltexts(int page_number, String prayer_type, String prayer, String period, String week_day,
+                           int prayer_version,
+                           String prayer_text)
     {
         this.page_number = page_number;
         this.prayer_type = prayer_type;

@@ -31,7 +31,7 @@ public class TemplateController {
 
  /*  @RequestMapping(path = "/")
     public String home(Model model){
-       ArrayList<Periodical_texts> breviary_elements = new ArrayList<>();
+       ArrayList<Periodicaltexts> breviary_elements = new ArrayList<>();
 
 
 
