@@ -1,14 +1,19 @@
 package com.theironyard;
 
+import com.theironyard.entities.Periodicaltexts;
+import com.theironyard.repositories.PeriodicaltextsRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.ArrayList;
+
 @Controller
 public class TemplateController {
 
-//    @Autowired
-  //  WidgetRepository widgetRepository;
+    @Autowired
+    PeriodicaltextsRepository periodicaltextsRepository;
 
 
 
@@ -33,7 +38,7 @@ public class TemplateController {
 
    @RequestMapping(path = "/")
     public String home(Model model){
- //      ArrayList<Periodicaltexts> breviary_elements = new ArrayList<>();
+       ArrayList<Periodicaltexts> breviary_elements = new ArrayList<>();
 
 
 
