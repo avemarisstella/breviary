@@ -1,5 +1,7 @@
 package com.theironyard.entities;
 
+import org.hibernate.annotations.Type;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -19,6 +21,7 @@ public class Periodicaltexts {
     String week_day;
     int prayer_version;
     @Lob
+    @Type(type = "org.hibernate.type.TextType")
     String prayer_text;
 
 
