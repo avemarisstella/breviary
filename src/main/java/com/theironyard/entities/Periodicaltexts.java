@@ -37,4 +37,6 @@ public class Periodicaltexts {
         this.prayer_text = prayer_text;
 
     }
+
+
 }
