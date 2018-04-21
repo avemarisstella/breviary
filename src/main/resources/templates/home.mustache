@@ -16,7 +16,7 @@
     </tr>
     {{#periodicaltexts}}
         <tr>
-            <td>{{page_number}}</td><td>{{period}}</td><td>{{prayer}}</td><td>{{prayer_text}}</td>
+            <td>{{page_number}}</td><td>{{period}}</td><td>{{prayer}}</td><td><p th:utext="${#strings.replace( #strings.escapeXml( prayer_text ),T(java.lang.System).getProperty('line.separator'),'&lt;br /&gt;')}" ></p></td>
         </tr>
     {{/periodicaltexts}}
 </table>
