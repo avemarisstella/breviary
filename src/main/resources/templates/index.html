@@ -5,11 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p th:each="periodicaltexts : ${periodicaltexts}">
+<p th:each="periodicaltext : ${periodicaltexts}">
 <h4>ID:</h4>
-<div th:text="${periodicaltexts.page_number}"></div>
+<div th:text="${periodicaltext.page_number}"></div>
 <h4>Title:</h4>
-<div th:text="${periodicaltexts.prayer_text}}"></div>
+<div th:text="${periodicaltext.prayer_text}}"></div>
 <div>---------------------------------------------------------</div>
 </p>
 </body>
