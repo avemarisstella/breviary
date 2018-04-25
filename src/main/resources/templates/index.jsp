@@ -12,6 +12,7 @@
 <h4>Page Number:</h4>
 <div th:text="${periodicaltext.page_number}"></div>
 <div th:text="${periodicaltext.prayer_text}"></div>
+<%${periodicaltext.prayer_text}%>
 
 <div>---------------------------------------------------------</div>
 </p>
