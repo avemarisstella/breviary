@@ -37,7 +37,7 @@ public class Periodicaltexts {
         this.period = period;
         this.week_day = week_day;
         this.prayer_version = prayer_version;
-        this.prayer_text = prayer_text;
+        this.prayer_text = prayer_text.replaceAll("\n","<br />");;
 
 
     }
@@ -48,6 +48,13 @@ public class Periodicaltexts {
 
     public void setPage_number(int page_number){
         this.page_number = page_number;
+    }
+
+    public String convertPrayerText() {
+        String a;
+        a = this.prayer_text;
+        a.replaceAll("\n","<br />");
+        return a;
     }
 
 
