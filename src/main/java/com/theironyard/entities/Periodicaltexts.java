@@ -22,7 +22,7 @@ public class Periodicaltexts {
     int prayer_version;
     @Lob
     @Type(type = "org.hibernate.type.TextType")
-    String prayer_text;
+    public String prayer_text;
 
 
     public Periodicaltexts() {}
