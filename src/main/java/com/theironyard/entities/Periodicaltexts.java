@@ -39,6 +39,7 @@ public class Periodicaltexts {
         this.prayer_version = prayer_version;
         this.prayer_text = prayer_text;
 
+
     }
 
     public int getPage_number(){

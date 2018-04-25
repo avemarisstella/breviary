@@ -15,7 +15,11 @@ public class Home {
     @RequestMapping("/home")
     public String index(Model model) {
 
+
+
         model.addAttribute("periodicaltexts", periodicaltextsRepository.findAll());
+
+
         return "index";
     }
 
