@@ -44,10 +44,10 @@ public class TemplateController {
         return "index";
     }*/
 
-  @RequestMapping("/thyme")
+ /* @RequestMapping("/thyme")
     public String index(){
       return "index.html";
-  }
+  }*/
 
    /*@RequestMapping(path = "/")
     public String home(Model model){
