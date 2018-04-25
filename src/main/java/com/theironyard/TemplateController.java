@@ -46,7 +46,7 @@ public class TemplateController {
 
  /* @RequestMapping("/thyme")
     public String index(){
-      return "index.jsp";
+      return "index.html";
   }*/
 
    /*@RequestMapping(path = "/")
