@@ -37,7 +37,7 @@ public class Periodicaltexts {
         this.period = period;
         this.week_day = week_day;
         this.prayer_version = prayer_version;
-        this.prayer_text = prayer_text.replaceAll("\n","<br />");;
+        this.prayer_text = prayer_text.replaceAll("S","N");;
 
 
     }

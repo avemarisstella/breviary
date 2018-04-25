@@ -16,7 +16,6 @@ public class Home {
     public String index(Model model) {
 
 
-
         model.addAttribute("periodicaltexts", periodicaltextsRepository.findAll());
 
 
