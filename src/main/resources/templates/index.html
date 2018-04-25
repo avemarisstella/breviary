@@ -12,7 +12,7 @@
 <h4>Page Number:</h4>
 <div th:text="${periodicaltext.page_number}"></div>
 
-<div th:utext="${#strings.replace( #strings.escapeXml( periodicaltext.prayer_text ),T(java.lang.System).getProperty('line.separator'),'<br />')}" ></div>
+<p th:utext="${#strings.replace( #strings.escapeXml( periodicaltext.prayer_text ),T(java.lang.System).getProperty('line.separator'),'<br />')}" ></p>
 <div>---------------------------------------------------------</div>
 </p>
 </body>
