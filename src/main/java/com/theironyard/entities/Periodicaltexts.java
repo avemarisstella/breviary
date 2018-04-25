@@ -41,5 +41,13 @@ public class Periodicaltexts {
 
     }
 
+    public int getPage_number(){
+        return page_number;
+    }
+
+    public void setPage_number(int page_number){
+        this.page_number = page_number;
+    }
+
 
 }
