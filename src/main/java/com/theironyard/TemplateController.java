@@ -3,12 +3,14 @@ package com.theironyard;
 import com.theironyard.entities.Periodicaltexts;
 import com.theironyard.repositories.PeriodicaltextsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 @Controller
 public class TemplateController {
@@ -37,7 +39,14 @@ public class TemplateController {
         return "home";
     }
 
+    @Value("${welcome.message:test}")
+    private String message = "Hello World";
 
+    @RequestMapping("/welcome")
+    public String welcome(Map<String, Object> model) {
+        model.put("message", this.message);
+        return "welcome";
+    }
   /*  @RequestMapping(value = "/thyme", method = RequestMethod.GET)
     public String showAllPosts(Model model) {
         model.addAttribute("periodicaltexts", periodicaltextsRepository.findAll());
