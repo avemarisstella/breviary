@@ -15,7 +15,7 @@
    <tr>
    <td>${periodicaltext.page_number}</td>
   <td>
-  ${fn:replace(periodicaltext.prayer_text, "\n", "<br />")}
+  ${fn:replace(periodicaltext.prayer_text, "\\n", "<br />")}
  </td>
    </tr>
 </c:forEach>
@@ -23,7 +23,7 @@
 
 <%
 String from = "Hello\nHello";
-String to = from.replaceAll(""\n", "<br />");
+String to = from.replaceAll("\n", "<br />");
 pageContext.setAttribute("to", to);
 %>
 
