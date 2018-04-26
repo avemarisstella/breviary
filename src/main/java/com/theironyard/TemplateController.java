@@ -44,8 +44,9 @@ public class TemplateController {
     private String message = "Hello World";
 
     @RequestMapping("/welcome.html")
-    public ModelAndView firstPage() {
-        return new ModelAndView("welcome");
+    public String welcome(Map<String, Object> model) {
+        model.put("message", this.message);
+        return "welcome";
     }
     @RequestMapping(value = "/thyme", method = RequestMethod.GET)
     public String showAllPosts(Model model) {
