@@ -21,7 +21,7 @@
 
 <%
 String from = "Hello\nHello";
-String to = from.replaceAll(""\n", "<br />");
+String to = from.replaceAll("\n", "<br />");
 pageContext.setAttribute("to", to);
 %>
 
