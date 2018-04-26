@@ -36,6 +36,8 @@ dependencies {
     compile('javax.servlet:jstl')
     compile('org.apache.tomcat.embed:tomcat-embed-jasper')
     runtime('org.postgresql:postgresql')
+    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+    compile('org.springframework.boot:spring-boot-starter-mustache')
 }
 
 task stage {
