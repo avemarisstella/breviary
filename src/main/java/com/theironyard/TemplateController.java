@@ -42,7 +42,7 @@ public class TemplateController {
     @Value("${welcome.message:test}")
     private String message = "Hello World";
 
-    @RequestMapping("/w")
+    @RequestMapping("/well")
     public String welcome(Map<String, Object> model) {
         model.put("message", this.message);
         return "welcome";
