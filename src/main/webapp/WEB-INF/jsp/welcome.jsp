@@ -12,7 +12,7 @@
 <c:forEach items="${periodicaltexts}" var="periodicaltext">
 <%
 String from = (String) pageContext.getAttribute("${periodicaltext.prayer_text}");
-String to = from.replaceAll("\r\n", "<br />");
+String to = from.replaceAll("\n", "<br />");
 pageContext.setAttribute("to", to);
 %>
 
