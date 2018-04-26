@@ -8,11 +8,12 @@
 
 <h1>Spring Boot Web JSP Example</h1>
 			<h2>Message: ${message}</h2>
-
+<c:forEach items="${periodicaltexts}" var="periodicaltext">
+   <c:out value="${periodicaltext.page_number}"/>
+   <c:out value="${periodicaltext.prayer_text}"/>
+</c:forEach>
 
 </body>
 
- <c:forEach items="${periodicaltexts}">
-                   ${periodicaltexts}
-            </c:forEach>
+
 </html>
