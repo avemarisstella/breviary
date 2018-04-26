@@ -16,7 +16,7 @@
    <td>${periodicaltext.page_number}</td>
   <td>
   <%
-  String from = (String) {periodicaltext.prayer_text};
+  String from = (String) periodicaltext.prayer_text;
   String to = from.replaceAll("\n", "<br />");
   pageContext.setAttribute("to", to);
   %>
