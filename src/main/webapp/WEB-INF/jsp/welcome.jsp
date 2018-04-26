@@ -14,18 +14,20 @@
 
    <tr>
    <td>${periodicaltext.page_number}</td>
-  <td>${periodicaltext.prayer_text}</td>
+  <td>
+  <%
+  String from = (String) pageContext.getAttribute("${periodicaltexts.prayer_text}");;
+  String to = from.replaceAll("\n", "<br />");
+  pageContext.setAttribute("to", to);
+  %>
+  <c:out value="${to}" escapeXml="false" /></td>
    </tr>
 </c:forEach>
 </table>
 
-<%
-String from = (String) pageContext.getAttribute("periodicaltexts[0].prayer_text");;
-String to = from.replaceAll("\n", "<br />");
-pageContext.setAttribute("to", to);
-%>
 
-<c:out value="${to}" escapeXml="false" />
+
+
 
 </body>
 
