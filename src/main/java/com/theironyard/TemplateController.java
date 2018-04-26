@@ -44,8 +44,10 @@ public class TemplateController {
     private String message = "Hello World";
 
     @RequestMapping("/welcome.html")
-    public String welcome(Map<String, Object> model) {
-        model.put("message", this.message);
+    public String welcome(Model model) {
+        String message = "Hello Spring Boot + JSP";
+
+        model.addAttribute("message", message);
         return "welcome";
     }
     @RequestMapping(value = "/thyme", method = RequestMethod.GET)
