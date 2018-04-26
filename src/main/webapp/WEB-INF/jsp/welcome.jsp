@@ -10,9 +10,15 @@
 			<h2>Message: ${message}</h2>
 <table>
 <c:forEach items="${periodicaltexts}" var="periodicaltext">
+  <%
+  String from = (String) ${periodicaltext.prayer_text};
+  String to = from.replaceAll("\r\n", "<br />");
+  pageContext.setAttribute("to", to);
+  %>
+
    <tr>
    <td>${periodicaltext.page_number}</td>
-  <td>${periodicaltext.prayer_text}</td>
+  <td><c:out value="${to}" escapeXml="false" /></td>
    </tr>
 </c:forEach>
 </table>
