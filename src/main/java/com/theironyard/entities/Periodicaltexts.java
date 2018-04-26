@@ -57,5 +57,9 @@ public class Periodicaltexts {
         return a;
     }
 
+    public String getPrayer_text() {
+        return prayer_text;
+    }
+
 
 }
