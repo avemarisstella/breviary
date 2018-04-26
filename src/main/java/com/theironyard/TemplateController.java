@@ -42,16 +42,16 @@ public class TemplateController {
     @Value("${welcome.message:test}")
     private String message = "Hello World";
 
-    @RequestMapping(value = "/well", method = RequestMethod.GET)
+    /*@RequestMapping(value = "/well", method = RequestMethod.GET)
     public String welcome(Map<String, Object> model) {
         model.put("message", this.message);
         return "welcome";
-    }
-  /*  @RequestMapping(value = "/thyme", method = RequestMethod.GET)
+    }*/
+    @RequestMapping(value = "/thyme", method = RequestMethod.GET)
     public String showAllPosts(Model model) {
         model.addAttribute("periodicaltexts", periodicaltextsRepository.findAll());
         return "index";
-    }*/
+    }
 
  /* @RequestMapping("/thyme")
     public String index(){
