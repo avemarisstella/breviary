@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -42,10 +43,9 @@ public class TemplateController {
     @Value("${welcome.message:test}")
     private String message = "Hello World";
 
-    @RequestMapping(value = "/well", method = RequestMethod.GET)
-    public String welcome(Map<String, Object> model) {
-        model.put("message", this.message);
-        return "welcome";
+    @RequestMapping("/welcome.html")
+    public ModelAndView firstPage() {
+        return new ModelAndView("welcome");
     }
     @RequestMapping(value = "/thyme", method = RequestMethod.GET)
     public String showAllPosts(Model model) {
