@@ -15,19 +15,19 @@
    <tr>
    <td>${periodicaltext.page_number}</td>
   <td>
-  <%
-  String from = (String) periodicaltext.prayer_text;
-  String to = from.replaceAll("\n", "<br />");
-  pageContext.setAttribute("to", to);
-  %>
-  <c:out value="${to}" escapeXml="false" /></td>
+  ${fn:replace(periodicaltext.prayer_text, "\n", "<br />")}
+ </td>
    </tr>
 </c:forEach>
 </table>
 
+<%
+String from = "Hello\nHello";
+String to = from.replaceAll(""\n", "<br />");
+pageContext.setAttribute("to", to);
+%>
 
-
-
+<c:out value="${to}" escapeXml="false" />
 
 </body>
 
