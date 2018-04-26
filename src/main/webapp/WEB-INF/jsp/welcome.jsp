@@ -20,7 +20,7 @@
 </table>
 
 <%
-String from = "Hello\nHello";
+String from = (String) pageContext.getAttribute("periodicaltexts[0].prayer_text");;
 String to = from.replaceAll("\n", "<br />");
 pageContext.setAttribute("to", to);
 %>
