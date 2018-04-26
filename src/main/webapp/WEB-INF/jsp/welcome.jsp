@@ -12,7 +12,7 @@
 <c:forEach items="${periodicaltexts}" var="periodicaltext">
    <tr>
    <td>${periodicaltext.page_number}</td>
-   <td>${periodicaltext.prayer_text}</td>
+  
    </tr>
 </c:forEach>
 </table>
