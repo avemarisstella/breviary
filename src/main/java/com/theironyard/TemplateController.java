@@ -48,6 +48,7 @@ public class TemplateController {
         String message = "Hello Spring Boot + JSP";
 
         model.addAttribute("message", message);
+        model.addAttribute("periodicaltexts", periodicaltextsRepository.findAll());
         return "welcome";
     }
     @RequestMapping(value = "/thyme", method = RequestMethod.GET)
