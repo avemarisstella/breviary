@@ -20,6 +20,8 @@ public class Periodicaltexts {
     String period;
     String week_day;
     int prayer_version;
+    String prayer_title;
+    String prayer_desc;
     @Lob
     @Type(type = "org.hibernate.type.TextType")
     public String prayer_text;
@@ -28,7 +30,7 @@ public class Periodicaltexts {
     public Periodicaltexts() {}
 
     public Periodicaltexts(int page_number, String prayer_type, String prayer, String period, String week_day,
-                           int prayer_version,
+                           int prayer_version,String prayer_title, String prayer_desc,
                            String prayer_text)
     {
         this.page_number = page_number;
@@ -37,6 +39,8 @@ public class Periodicaltexts {
         this.period = period;
         this.week_day = week_day;
         this.prayer_version = prayer_version;
+        this.prayer_title = prayer_title;
+        this.prayer_desc = prayer_desc;
         this.prayer_text = prayer_text;
 
 
@@ -50,11 +54,33 @@ public class Periodicaltexts {
         this.page_number = page_number;
     }
 
-    public String convertPrayerText() {
-        String a;
-        a = this.prayer_text;
-        a.replaceAll("\n","<br />");
-        return a;
+
+    public String getPrayer_type(){
+        return prayer_type;
+    }
+
+    public String getPrayer(){
+        return prayer;
+    }
+
+    public String getPeriod(){
+        return period;
+    }
+
+    public String getWeek_day(){
+        return week_day;
+    }
+
+    public int getPrayer_version(){
+        return prayer_version;
+    }
+
+    public String getPrayer_title(){
+        return prayer_title;
+    }
+
+    public String getPrayer_desc(){
+        return prayer_desc;
     }
 
     public String getPrayer_text() {
