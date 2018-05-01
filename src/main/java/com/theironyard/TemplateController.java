@@ -43,6 +43,16 @@ public class TemplateController {
     @Value("${welcome.message:test}")
     private String message = "Hello World";
 
+    @RequestMapping("/prayer")
+    public String prayer(Model model){
+        String calling = "K. Boże wejrzyj ku wspomożeniu memu.<br />W. Panie, pośpiesz ku ratunkowi memu." +
+                "<br /> Chwała Ojcu i Synowi, i Duchowi Świętemu.<br /> Jak była na początku, teraz i zawsze," +
+                "<br /> i na wieki wieków. Amen. Alleluja.";
+
+
+        return "prayer";
+            }
+
     @RequestMapping("/welcome.html")
     public String welcome(Model model) {
         String message = "Hello Spring Boot + JSP";
