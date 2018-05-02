@@ -1,6 +1,6 @@
-package com.theironyard.repositories;
+package com.breviary.repositories;
 
-import com.theironyard.entities.Widget;
+import com.breviary.entities.Widget;
 import org.springframework.data.repository.CrudRepository;
 
 

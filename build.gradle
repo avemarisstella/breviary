@@ -10,7 +10,7 @@ buildscript {
     }
 }
 
-group 'com.theironyard'
+group 'com.breviary'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'

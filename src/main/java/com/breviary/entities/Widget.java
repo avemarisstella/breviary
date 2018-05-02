@@ -1,4 +1,4 @@
-package com.theironyard.entities;
+package com.breviary.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

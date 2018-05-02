@@ -1,7 +1,7 @@
-package com.theironyard.repositories;
+package com.breviary.repositories;
 
 import org.springframework.data.repository.CrudRepository;
-import com.theironyard.entities.Periodicaltexts;
+import com.breviary.entities.Periodicaltexts;
 
 public interface PeriodicaltextsRepository extends CrudRepository<Periodicaltexts, Integer> {
 

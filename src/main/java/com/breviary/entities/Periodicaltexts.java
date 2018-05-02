@@ -1,4 +1,4 @@
-package com.theironyard.entities;
+package com.breviary.entities;
 
 import org.hibernate.annotations.Type;
 
